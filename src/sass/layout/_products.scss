@@ -1,0 +1,122 @@
+.section-products {
+  padding-top: 137px;
+  padding-bottom: 112px;
+}
+
+.section-products__title {
+  font-family: 'Hind Madurai', sans-serif;
+  font-weight: 600;
+  font-size: 44.2px;
+  line-height: 1.39;
+  text-align: center;
+  color: var(--header-text-color);
+  margin-bottom: 64px;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter__item {
+
+  &:not(:last-child) {
+    margin-right: 39px;
+  }
+}
+
+.filter__button {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.17;
+  color: var(--main-title-color);
+  opacity: 0.6;
+  border-bottom: 3px solid transparent;
+
+  &:focus,
+  &:hover {
+    opacity: 1;
+    border-color: var(--accent-color);
+  }
+
+  // &:focus::before,
+  // &:hover::before {
+  //   content: '';
+  //   position: absolute;
+  //   left: 0;
+  //   bottom: 0;
+  //   display: block;
+  //   height: 3px;
+  //   width: 100%;
+  //   background-color: #D64374;
+  // }
+}
+
+.products {
+}
+
+.products__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.products__thumb {
+  max-width: 454px;
+  font-family: 'Hind Madurai', sans-serif;
+
+  &:nth-child(odd) {
+    text-align: right;
+    margin-right: 84px;
+  }
+
+  &:nth-child(even) {
+    margin-left: 84px;
+  }
+}
+
+.products__title {
+  margin-bottom: 11px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.5;
+  color: var(--main-title-color);
+}
+
+.products__text {
+  margin-bottom: 28px;
+  font-family: Roboto, sans-serif;
+  opacity: 0.7;
+}
+
+.products__value {
+  margin-right: 5px;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.38;
+  color: var(--main-title-color);
+}
+
+.products__value-old {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  text-decoration-line: line-through;
+  opacity: 0.7;
+}
+
+.product__button {
+  margin-left: auto;
+}
