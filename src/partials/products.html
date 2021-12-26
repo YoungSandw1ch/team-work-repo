@@ -23,7 +23,13 @@
     </ul>
     <ul class="products">
       <li class="products__item">
-        <img src="" alt="" class="products__img">
+        <picture>
+          <source srcset='./images/product/icecream-1.webp 1x, ./images/product/icecream-1@2x.webp 2x'
+            type='image/webp' />
+          <source srcset='./images/product/icecream-1.jpg 1x, ./images/product/icecream-1@2x.jpg 2x'
+            type='image/webp' />
+          <img class='products__img' src='./images/product/icecream-1.jpg' alt='' width='' height='' />
+        </picture>
         <div class="products__thumb">
           <h3 class="products__title">Brown bread</h3>
           <p class="products__text">Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au Pain is a pioneer in
